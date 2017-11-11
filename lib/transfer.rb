@@ -18,9 +18,10 @@ class Transfer
   end
 
   def execute_transaction
-    if self.valid? 
+    if self.valid?
       @receiver.deposit(@amount)
       @sender.withdraw(@amount)
+    end
   end
 
 end
