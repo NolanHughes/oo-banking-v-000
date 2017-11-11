@@ -5,4 +5,8 @@ class BankAccount
     @name = name
     @balance = 1000
   end
+
+  def balance
+    @balance
+  end
 end
