@@ -22,9 +22,6 @@ class Transfer
       @receiver.deposit(@amount)
       @sender.withdraw(@amount)
       @status = "complete"
-      if @status == "complete"
-        self.valid? == false
-      end
     end
   end
 
