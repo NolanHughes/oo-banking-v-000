@@ -24,12 +24,12 @@ class Transfer
       @sender.withdraw(@amount)
       @status = "complete"
     else
-      self.status
+      self.change_status
       "Transaction rejected. Please check your account balance."
     end
   end
 
-  def status
+  def change_status
     @status = "rejected"
   end
   
