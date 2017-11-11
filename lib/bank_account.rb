@@ -17,5 +17,8 @@ class BankAccount
 
   def deposit(amount)
     @balance + amount
+    @balance
   end
 end
+
+binding.pry
