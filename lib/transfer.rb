@@ -22,6 +22,9 @@ class Transfer
       @receiver.deposit(@amount)
       @sender.withdraw(@amount)
       @status = "complete"
+      if @status == "complete"
+        break
+      end
     end
   end
 
