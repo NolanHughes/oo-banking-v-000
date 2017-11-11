@@ -33,4 +33,8 @@ class Transfer
     @status = "rejected"
   end
 
+  def reverse_transfer
+    
+  end
+
 end
