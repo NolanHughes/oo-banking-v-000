@@ -12,6 +12,6 @@ class BankAccount
   end
 
   def status
-    @open
+    @status
   end
 end
