@@ -36,11 +36,11 @@ class BankAccount
   end
 end
 
-# avi = BankAccount.new("Avi")
-# 
-# @broke = BankAccount.new("Kat Dennings")
-# @broke.balance = 0
-# @closed = BankAccount.new("Beth Behrs")
-# @closed.status = "closed"
-# 
-# binding.pry
+avi = BankAccount.new("Avi")
+
+@broke = BankAccount.new("Kat Dennings")
+@broke.balance = 0
+@closed = BankAccount.new("Beth Behrs")
+@closed.status = "closed"
+
+binding.pry
