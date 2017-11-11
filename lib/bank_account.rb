@@ -26,7 +26,6 @@ class BankAccount
     "Your balance is $#{@balance}."
   end
 
-  #valid if balance is less than 0 or status is "closed"
   def valid?
     if @balance <= 0 || @status == "closed"
       false
@@ -34,13 +33,18 @@ class BankAccount
       true
     end
   end
+
+  def close_account
+    self.status = "closed"
+  end
+  
 end
 
 # avi = BankAccount.new("Avi")
-# 
+#
 # @broke = BankAccount.new("Kat Dennings")
 # @broke.balance = 0
 # @closed = BankAccount.new("Beth Behrs")
 # @closed.status = "closed"
-# 
+#
 # binding.pry
