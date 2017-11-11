@@ -22,9 +22,9 @@ class BankAccount
   def display_balance
     "Your balance is $#{@balance}."
   end
-
+  
+  #valid if balance is less than 0 or status is "closed"
   def valid?
-    #valid if balance is less than 0 or status is "closed"
     
   end
 end
