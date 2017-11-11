@@ -23,7 +23,7 @@ class Transfer
       @sender.withdraw(@amount)
       @status = "complete"
       if @status == "complete"
-        self.valid? = false
+        self.valid? == false
       end
     end
   end
